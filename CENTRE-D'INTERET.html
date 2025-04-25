@@ -190,11 +190,11 @@
           <div class="interest-item" onclick="showInterestDetails('taekwondo')"
                onkeypress="if(event.key==='Enter') showInterestDetails('taekwondo')"
                tabindex="0" role="button" aria-expanded="false" aria-controls="taekwondo">
-            <img data-src="./styles/images/taekwondo.jpg" alt="Taekwondo" class="lazy-load" />
+            <img data-src="./styles/images/taekwondo.jpg" alt="taekwondo" class="lazy-load" />
             <noscript>
-              <img src="./styles/images/taekwondo.jpg" alt="Taekwondo" />
+              <img src="./styles/images/taekwondo.jpg" alt="taekwondo" />
             </noscript>
-            <p>Taekwondo</p>
+            <p>taekwondo</p>
           </div>
         </div>
         
@@ -312,15 +312,15 @@
       </div>
       
       <div id="taekwondo" class="interest-details" role="region" aria-labelledby="taekwondo-heading">
-        <h3 id="taekwondo-heading">Taekwondo</h3>
+        <h3 id="taekwondo-heading">taekwondo</h3>
         <div class="interest-detail-content">
-          <img data-src="./styles/images/taekwondo-detail.jpg" alt="Taekwondo détails" class="lazy-load" />
+          <img data-src="./styles/images/taekwondo-detail.jpg" alt="taekwondo détails" class="lazy-load" />
           <noscript>
-            <img src="./styles/images/taekwondo-detail.jpg" alt="Taekwondo détails" />
+            <img src="./styles/images/taekwondo-detail.jpg" alt="taekwondo détails" />
           </noscript>
           <div class="interest-description">
-            <p>J'ai débuté le taekwondo il y a 2 ans et j'ai obtenu ma ceinture verte.</p>
-            <p>Cet art martial m'aide à maintenir ma discipline personnelle et à améliorer ma confiance en moi.</p>
+            <p>J'ai pratiqué le taekwondo pendant <span>3 ans</span> et j'ai obtenu ma ceinture verte.</p>
+            <p>Cet art martial m'a aidé à maintenir ma discipline personnelle et à améliorer ma confiance en moi.</p>
           </div>
         </div>
         <button class="close-details" onclick="document.getElementById('taekwondo').style.display='none'; document.querySelector('[aria-controls=\'taekwondo\']').setAttribute('aria-expanded', 'false');" aria-label="Fermer les détails sur le taekwondo">Fermer</button>
@@ -476,11 +476,11 @@
           <div class="interest-item" onclick="showInterestDetails('taekwondo-en')"
                onkeypress="if(event.key==='Enter') showInterestDetails('taekwondo-en')"
                tabindex="0" role="button" aria-expanded="false" aria-controls="taekwondo-en">
-            <img data-src="./styles/images/taekwondo.jpg" alt="Taekwondo" class="lazy-load" />
+            <img data-src="./styles/images/taekwondo.jpg" alt="Karate" class="lazy-load" />
             <noscript>
-              <img src="./styles/images/taekwondo.jpg" alt="Taekwondo" />
+              <img src="./styles/images/taekwondo.jpg" alt="Karate" />
             </noscript>
-            <p>Taekwondo</p>
+            <p>Karate</p>
           </div>
         </div>
         
@@ -495,7 +495,7 @@
             </noscript>
             <p>Theater</p>
           </div>
-          <div class="interest-item" onclick="showInterestDetails('musique-en')"
+		  <div class="interest-item" onclick="showInterestDetails('musique-en')"
                onkeypress="if(event.key==='Enter') showInterestDetails('musique-en')"
                tabindex="0" role="button" aria-expanded="false" aria-controls="musique-en">
             <img data-src="./styles/images/musique.jpg" alt="Music" class="lazy-load" />
@@ -597,6 +597,21 @@
         <button class="close-details" onclick="document.getElementById('handball-en').style.display='none'; document.querySelector('[aria-controls=\'handball-en\']').setAttribute('aria-expanded', 'false');" aria-label="Close handball details">Close</button>
       </div>
       
+      <div id="taekwondo-en" class="interest-details" role="region" aria-labelledby="taekwondo-heading-en">
+        <h3 id="taekwondo-heading-en">Karate</h3>
+        <div class="interest-detail-content">
+          <img data-src="./styles/images/taekwondo-detail.jpg" alt="Karate details" class="lazy-load" />
+          <noscript>
+            <img src="./styles/images/taekwondo-detail.jpg" alt="Karate details" />
+          </noscript>
+          <div class="interest-description">
+            <p>I practiced karate for <span>3 years</span> and obtained my green belt.</p>
+            <p>This martial art helped me maintain personal discipline and improve my self-confidence.</p>
+          </div>
+        </div>
+        <button class="close-details" onclick="document.getElementById('taekwondo-en').style.display='none'; document.querySelector('[aria-controls=\'taekwondo-en\']').setAttribute('aria-expanded', 'false');" aria-label="Close karate details">Close</button>
+      </div>
+      
       <!-- AJOUT DU DÉTAIL ART EN ANGLAIS -->
       <div id="art-en" class="interest-details" role="region" aria-labelledby="art-heading-en">
         <h3 id="art-heading-en">Art</h3>
@@ -644,11 +659,11 @@
           <div class="interest-item" onclick="showInterestDetails('taekwondo-es')"
                onkeypress="if(event.key==='Enter') showInterestDetails('taekwondo-es')"
                tabindex="0" role="button" aria-expanded="false" aria-controls="taekwondo-es">
-            <img data-src="./styles/images/taekwondo.jpg" alt="Taekwondo" class="lazy-load" />
+            <img data-src="./styles/images/taekwondo.jpg" alt="Karate" class="lazy-load" />
             <noscript>
-              <img src="./styles/images/taekwondo.jpg" alt="Taekwondo" />
+              <img src="./styles/images/taekwondo.jpg" alt="Karate" />
             </noscript>
-            <p>Taekwondo</p>
+            <p>Karate</p>
           </div>
         </div>
         
@@ -732,6 +747,21 @@
         <button class="close-details" onclick="document.getElementById('athletisme-es').style.display='none'; document.querySelector('[aria-controls=\'athletisme-es\']').setAttribute('aria-expanded', 'false');" aria-label="Cerrar detalles del atletismo">Cerrar</button>
       </div>
       
+      <div id="taekwondo-es" class="interest-details" role="region" aria-labelledby="taekwondo-heading-es">
+        <h3 id="taekwondo-heading-es">Karate</h3>
+        <div class="interest-detail-content">
+          <img data-src="./styles/images/taekwondo-detail.jpg" alt="Detalles de karate" class="lazy-load" />
+          <noscript>
+            <img src="./styles/images/taekwondo-detail.jpg" alt="Detalles de karate" />
+          </noscript>
+          <div class="interest-description">
+            <p>Practiqué karate durante <span>3 años</span> y obtuve mi cinturón verde.</p>
+            <p>Este arte marcial me ayudó a mantener mi disciplina personal y mejorar mi confianza.</p>
+          </div>
+        </div>
+        <button class="close-details" onclick="document.getElementById('taekwondo-es').style.display='none'; document.querySelector('[aria-controls=\'taekwondo-es\']').setAttribute('aria-expanded', 'false');" aria-label="Cerrar detalles de karate">Cerrar</button>
+      </div>
+      
       <!-- AJOUT DU DÉTAIL ART EN ESPAGNOL -->
       <div id="art-es" class="interest-details" role="region" aria-labelledby="art-heading-es">
         <h3 id="art-heading-es">Arte</h3>
@@ -773,6 +803,15 @@
               <img src="./styles/images/handball.jpg" alt="手球" />
             </noscript>
             <p>手球</p>
+          </div>
+          <div class="interest-item" onclick="showInterestDetails('taekwondo-zh')"
+               onkeypress="if(event.key==='Enter') showInterestDetails('taekwondo-zh')"
+               tabindex="0" role="button" aria-expanded="false" aria-controls="taekwondo-zh">
+            <img data-src="./styles/images/taekwondo.jpg" alt="空手道" class="lazy-load" />
+            <noscript>
+              <img src="./styles/images/taekwondo.jpg" alt="空手道" />
+            </noscript>
+            <p>空手道</p>
           </div>
         </div>
         
@@ -825,6 +864,21 @@
         <button class="close-details" onclick="document.getElementById('athletisme-zh').style.display='none'; document.querySelector('[aria-controls=\'athletisme-zh\']').setAttribute('aria-expanded', 'false');" aria-label="关闭田径详情">关闭</button>
       </div>
       
+      <div id="taekwondo-zh" class="interest-details" role="region" aria-labelledby="taekwondo-heading-zh">
+        <h3 id="taekwondo-heading-zh">空手道</h3>
+        <div class="interest-detail-content">
+          <img data-src="./styles/images/taekwondo-detail.jpg" alt="空手道详情" class="lazy-load" />
+          <noscript>
+            <img src="./styles/images/taekwondo-detail.jpg" alt="空手道详情" />
+          </noscript>
+          <div class="interest-description">
+            <p>我练习空手道<span>3年</span>，并获得了绿带。</p>
+            <p>这项武术帮助我保持自律并提高自信。</p>
+          </div>
+        </div>
+        <button class="close-details" onclick="document.getElementById('taekwondo-zh').style.display='none'; document.querySelector('[aria-controls=\'taekwondo-zh\']').setAttribute('aria-expanded', 'false');" aria-label="关闭空手道详情">关闭</button>
+      </div>
+      
       <!-- AJOUT DU DÉTAIL ART EN CHINOIS -->
       <div id="art-zh" class="interest-details" role="region" aria-labelledby="art-heading-zh">
         <h3 id="art-heading-zh">艺术</h3>
@@ -861,11 +915,11 @@
           <div class="interest-item" onclick="showInterestDetails('taekwondo-ar')"
                onkeypress="if(event.key==='Enter') showInterestDetails('taekwondo-ar')"
                tabindex="0" role="button" aria-expanded="false" aria-controls="taekwondo-ar">
-            <img data-src="./styles/images/taekwondo.jpg" alt="تايكوندو" class="lazy-load" />
+            <img data-src="./styles/images/taekwondo.jpg" alt="الكاراتيه" class="lazy-load" />
             <noscript>
-              <img src="./styles/images/taekwondo.jpg" alt="تايكوندو" />
+              <img src="./styles/images/taekwondo.jpg" alt="الكاراتيه" />
             </noscript>
-            <p>تايكوندو</p>
+            <p>الكاراتيه</p>
           </div>
         </div>
         
@@ -909,6 +963,21 @@
         <button class="close-details" onclick="document.getElementById('athletisme-ar').style.display='none'; document.querySelector('[aria-controls=\'athletisme-ar\']').setAttribute('aria-expanded', 'false');" aria-label="إغلاق تفاصيل ألعاب القوى">إغلاق</button>
       </div>
       
+      <div id="taekwondo-ar" class="interest-details" role="region" aria-labelledby="taekwondo-heading-ar" dir="rtl">
+        <h3 id="taekwondo-heading-ar">الكاراتيه</h3>
+        <div class="interest-detail-content">
+          <img data-src="./styles/images/taekwondo-detail.jpg" alt="تفاصيل الكاراتيه" class="lazy-load" />
+          <noscript>
+            <img src="./styles/images/taekwondo-detail.jpg" alt="تفاصيل الكاراتيه" />
+          </noscript>
+          <div class="interest-description">
+            <p>مارست الكاراتيه لمدة <span>3 سنوات</span> وحصلت على الحزام الأخضر.</p>
+            <p>ساعدني هذا الفن القتالي على الحفاظ على انضباطي الشخصي وتحسين ثقتي بنفسي.</p>
+          </div>
+        </div>
+        <button class="close-details" onclick="document.getElementById('taekwondo-ar').style.display='none'; document.querySelector('[aria-controls=\'taekwondo-ar\']').setAttribute('aria-expanded', 'false');" aria-label="إغلاق تفاصيل الكاراتيه">إغلاق</button>
+      </div>
+      
       <!-- AJOUT DU DÉTAIL ART EN ARABE -->
       <div id="art-ar" class="interest-details" role="region" aria-labelledby="art-heading-ar" dir="rtl">
         <h3 id="art-heading-ar">الفن</h3>
@@ -942,7 +1011,7 @@
             </noscript>
             <p>एथलेटिक्स</p>
           </div>
-<div class="interest-item" onclick="showInterestDetails('handball-hi')"
+          <div class="interest-item" onclick="showInterestDetails('handball-hi')"
                onkeypress="if(event.key==='Enter') showInterestDetails('handball-hi')"
                tabindex="0" role="button" aria-expanded="false" aria-controls="handball-hi">
             <img data-src="./styles/images/handball.jpg" alt="हैंडबॉल" class="lazy-load" />
@@ -950,6 +1019,15 @@
               <img src="./styles/images/handball.jpg" alt="हैंडबॉल" />
             </noscript>
             <p>हैंडबॉल</p>
+          </div>
+          <div class="interest-item" onclick="showInterestDetails('taekwondo-hi')"
+               onkeypress="if(event.key==='Enter') showInterestDetails('taekwondo-hi')"
+               tabindex="0" role="button" aria-expanded="false" aria-controls="taekwondo-hi">
+            <img data-src="./styles/images/taekwondo.jpg" alt="कराटे" class="lazy-load" />
+            <noscript>
+              <img src="./styles/images/taekwondo.jpg" alt="कराटे" />
+            </noscript>
+            <p>कराटे</p>
           </div>
         </div>
         
@@ -991,6 +1069,21 @@
           </div>
         </div>
         <button class="close-details" onclick="document.getElementById('athletisme-hi').style.display='none'; document.querySelector('[aria-controls=\'athletisme-hi\']').setAttribute('aria-expanded', 'false');" aria-label="एथलेटिक्स विवरण बंद करें">बंद करें</button>
+      </div>
+      
+      <div id="taekwondo-hi" class="interest-details" role="region" aria-labelledby="taekwondo-heading-hi">
+        <h3 id="taekwondo-heading-hi">कराटे</h3>
+        <div class="interest-detail-content">
+          <img data-src="./styles/images/taekwondo-detail.jpg" alt="कराटे विवरण" class="lazy-load" />
+          <noscript>
+            <img src="./styles/images/taekwondo-detail.jpg" alt="कराटे विवरण" />
+          </noscript>
+          <div class="interest-description">
+            <p>मैंने <span>3 साल</span> तक कराटे का अभ्यास किया और अपनी हरी बेल्ट प्राप्त की।</p>
+            <p>इस मार्शल आर्ट ने मुझे अपने व्यक्तिगत अनुशासन को बनाए रखने और आत्मविश्वास बढ़ाने में मदद की।</p>
+          </div>
+        </div>
+        <button class="close-details" onclick="document.getElementById('taekwondo-hi').style.display='none'; document.querySelector('[aria-controls=\'taekwondo-hi\']').setAttribute('aria-expanded', 'false');" aria-label="कराटे विवरण बंद करें">बंद करें</button>
       </div>
       
       <!-- AJOUT DU DÉTAIL ART EN HINDI -->
