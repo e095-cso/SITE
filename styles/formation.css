@@ -1,0 +1,268 @@
+/* 
+ * formation.css - Styles spécifiques pour la page de formation
+ * À importer après les autres fichiers CSS pour les styles spécifiques aux pages de formation
+ */
+
+/* Styles pour les formations interactives */
+.formation-card {
+  display: flex;
+  flex-direction: row; /* Organisation horizontale */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.formation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.formation-image-container {
+  flex: 0 0 40%; /* Occupe 40% de la largeur */
+  position: relative;
+  overflow: hidden;
+}
+
+.formation-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.formation-card:hover .formation-image {
+  transform: scale(1.03);
+}
+
+.formation-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.formation-title {
+  color: #2c3e50;
+  margin: 0 0 15px 0;
+  font-size: 1.5em;
+  border-bottom: 2px solid #f1c40f;
+  padding-bottom: 10px;
+}
+
+.formation-title small {
+  display: block;
+  font-size: 0.7em;
+  margin-top: 5px;
+  color: #7f8c8d;
+}
+
+.formation-details {
+  display: none;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.formation-details h4 {
+  color: #2c3e50;
+  border-bottom: 2px solid #f1c40f;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.formation-specialites, .formation-location {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.formation-specialites {
+  background-color: #ecf0f1;
+  border-radius: 8px;
+}
+
+.formation-location {
+  position: relative;
+}
+
+.formation-location iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.close-details {
+  background-color: #f1c40f;
+  color: #2c3e50;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.close-details:hover {
+  background-color: #e1b90f;
+}
+
+/* Styles pour la timeline éducative */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #f1c40f;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.timeline-item:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.timeline-item:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.timeline-content {
+  width: 45%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f1c40f;
+  border-radius: 50%;
+  top: 20px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::after {
+  right: -30px;
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+  left: -30px;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3498db;
+  font-size: 1.1em;
+}
+
+/* Styles pour formations avec images horizontales */
+.formations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Styles pour les variantes alternatives */
+.formation-card.horizontal {
+  flex-direction: row;
+}
+
+.formation-card.vertical {
+  flex-direction: column;
+}
+
+.formation-card.vertical .formation-image-container {
+  flex: 0 0 auto;
+  height: 250px;
+}
+
+.formation-card.vertical .formation-content {
+  padding: 20px;
+}
+
+/* Media queries pour responsive design */
+@media (max-width: 768px) {
+  .formations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .formation-card {
+    flex-direction: column;
+  }
+  
+  .formation-image-container {
+    flex: 0 0 auto;
+    height: 200px;
+  }
+  
+  .formation-content {
+    padding: 15px;
+  }
+  
+  .formation-title {
+    font-size: 1.3em;
+  }
+  
+  .formation-specialites, .formation-location {
+    padding: 10px;
+  }
+  
+  .formation-location iframe {
+    height: 250px;
+  }
+  
+  /* Responsive pour timeline */
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    justify-content: flex-start !important;
+  }
+  
+  .timeline-content {
+    width: 80%;
+    margin-left: 40px;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content::after,
+  .timeline-item:nth-child(even) .timeline-content::after {
+    left: -30px;
+  }
+}
